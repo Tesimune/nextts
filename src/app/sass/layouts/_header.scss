@@ -1,0 +1,29 @@
+
+header.header {
+    @apply p-3 h-16 w-full bg-white border-b fixed z-40;
+    .wrapper {
+        @apply container mx-auto flex items-center h-full justify-between w-[94vw];
+
+        nav.navbar {
+            @apply flex items-center gap-10;
+
+            ul.nav-menu, div.login-btns{
+                @apply flex items-center gap-5;
+            }
+
+            ul.nav-menu {
+                a {@apply hover:underline}
+            }
+
+            div.login-btns{
+                @apply gap-3;
+                a.btn{
+                    @apply text-sm px-5 py-2 rounded-lg hover:opacity-70;
+                    &.login{@apply border}
+                    &.register{@apply bg-fuchsia-500 text-white;}
+                }
+            }
+        }
+    }
+
+}
